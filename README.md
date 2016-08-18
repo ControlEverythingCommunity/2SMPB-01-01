@@ -8,7 +8,7 @@ This Device is available from ControlEverything.com [SKU: 2SMPB-01-01_I2CS]
 
 https://www.controleverything.com/products
 
-This Sample code can be used with Raspberry pi, Arduino, Particle and Beaglebone Black.
+This Sample code can be used with Raspberry Pi, Arduino, Particle Photon, Beaglebone Black and Onion Omega.
 
 ## Java
 Download and install pi4j library on Raspberry pi. Steps to install pi4j are provided at:
@@ -74,6 +74,26 @@ $>gcc _2SMPB_01_01.c -o _2SMPB_01_01
 Run the c program.
 ```cpp
 $>./_2SMPB_01_01
+```
+
+## Onion Omega
+
+Get Started and setting up the Onion Omega according to steps provided at :
+
+https://wiki.onion.io/Get-Started
+
+To install the Python module, run the following commands:
+```cpp
+opkg update
+```
+```cpp
+opkg install python-light pyOnionI2C
+```
+
+Download (or git pull) the code in Onion Omega. Run the program.
+
+```cpp
+$> python _2SMPB_01_01.py
 ```
 
 #####The code output is the absolute pressure in kPa.
